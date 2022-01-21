@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def Code(message):
     coded_message = ""
     for string in message.lower().split():
@@ -69,6 +70,8 @@ def Main():
         print("Coded message: " + Code(message))
     elif choice == "2":
         print("Decoded message: " + Decode(message))
+        print('\n')
 
 
-Main()
+while True:
+    Main()
